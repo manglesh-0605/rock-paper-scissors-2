@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="scoreboard">
+      <div class="title">
+        <img src="/images/logo.svg" alt="rock paper scissor image">
+      </div>
+      <div class="score">
+        <p>SCORE</p>
+        <h1 id="score">0</h1>
+      </div>
+
+    </header>
+
+    <section class="hands">
+      <div class="paper hand">
+        <img src="/images/icon-paper.svg" alt="" onclick="pickYourChoise('paper')">
+      </div>
+      <div class="scissors hand">
+        <img src="/images/icon-scissors.svg" alt="" onclick="pickYourChoise('scissors')">
+      </div>
+      <div class="rock hand">
+        <img src="/images/icon-rock.svg" alt="" onclick="pickYourChoise('rock')">
+      </div>
+    </section>
+
+    <section class="contest">
+
+      <div class="yourChoise">
+
+        <h1>YOU PICKED</h1>
+
+        <div class="imageContainer hand ">
+          <img id="userPickImg" src="/images/icon-paper.svg" alt="">
+        </div>
+
+      </div>
+
+      <div class="result">
+        <div class="decision">
+          <h1 id="decision">YOU WIN</h1>
+          <div class="newGame">PLAY AGAIN</div>
+        </div>
+
+      </div>
+
+      <div class="houseChoise">
+        <h1>HOUSE PICKED</h1>
+        <div class="imageContainer hand rock">
+          <img id="housePickImg" src="/images/icon-rock.svg" alt="">
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="/app.js"></script>
+</body>
+
+</html>
